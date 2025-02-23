@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kids Coding Academy</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            background-color: #1e1e2f; /* Dark background */
+            color: #e0e0e0; /* Light text for contrast */
+            font-family: 'Arial', sans-serif;
+            background-image: url('https://example.com/gaming-background.jpg'); /* Add your background image */
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+
+        .container {
+            margin-top: 50px;
+        }
+
+        h1 {
+            color: #FFD700; /* Gold title color */
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+        }
+
+        .description-container {
+            background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black background */
+            padding: 30px;
+            border-radius: 10px;
+            margin-bottom: 50px;
+            box-shadow: 0px 0px 20px rgba(255, 215, 0, 0.5); /* Gold shadow */
+            backdrop-filter: blur(5px); /* Adding blur effect */
+        }
+
+        .course-tile {
+   
+    background-size: cover; /* Ensures the image covers the entire tile */
+    background-position: center; /* Centers the image */
+    color: #FFFFFF; /* White text for visibility on the background */
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2); /* Fun, visible shadow */
+    height: 250px; /* Fixed height for tiles */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center the text vertically */
+}
+
+        .course-tile:hover {
+            transform: scale(1.05);
+            box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.7); /* Darker shadow on hover */
+        }
+
+        .course-tile i {
+            font-size: 40px;
+            margin-bottom: 15px;
+            color: #FFD700; /* Gold icon color */
+        }
+
+        .course-title {
+            font-size: 20px;
+            font-weight: bold;
+            color: #00FF7F; /* Vibrant green title color */
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6); /* Glow effect */
+        }
+
+        .course-description {
+            font-size: 16px;
+            color: #dcdcdc; /* Light gray description text */
+        }
+
+        .hover-text {
+            display: none;
+            position: absolute;
+            bottom: 100%;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 16px;
+            color: #FF4500; /* Vibrant orange */
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 5px 10px;
+            border-radius: 5px;
+            margin-bottom: 10px;
+            box-shadow: 0px 0px 10px rgba(255, 69, 0, 0.7); /* Orange shadow */
+        }
+
+        .course-tile:hover .hover-text {
+            display: block;
+        }
+
+        .btn-primary {
+            background-color: #FF4500; /* Bright orange button */
+            border: none;
+            color: #ffffff;
+        }
+
+        .btn-primary:hover {
+            background-color: #FF6347; /* Lighter orange on hover */
+        }
+
+        .navbar {
+            background-color: #FFD700; /* Gold navbar */
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+        }
+
+        .navbar-nav .nav-link {
+            color: #1e1e2f;
+        }
+
+        .navbar-nav .nav-link:hover {
+            color: #FF4500; /* Orange hover effect */
+        }
+
+        .modal-content {
+            background-color: #333333; /* Dark background */
+            color: #e0e0e0; /* Light text */
+        }
+
+        .modal-header {
+            border-bottom: 1px solid #FF4500; /* Orange border */
+        }
+
+        .modal-title {
+            color: #FFD700; /* Gold title */
+        }
+
+        .sign-in-btn {
+            background-color: #00B5B8; /* Teal button */
+            border: none;
+            color: #ffffff;
+            padding: 10px 20px;
+            border-radius: 5px;
+            width: 100%;
+            margin-bottom: 10px;
+            font-size: 16px;
+        }
+
+        .sign-in-btn:hover {
+            background-color: #007B77; /* Darker teal on hover */
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1 class="text-center mb-5">Welcome to Game Zone!</h1>
+
+        <div id="home-section" class="description-container">
+            <h2>Welcome to Aksh Bhatt’s Awesome Game Zone!</h2>
+            <p>Ever played a game made by a kid? Well, get ready, because Aksh Bhatt is here to blow your mind with fun, wacky, and totally creative games! From epic adventures to laugh-out-loud challenges, Aksh’s games are packed with imagination, surprises, and endless fun.</p>
+            <p>So jump into Aksh's Scratch-tastic world, and discover games that are full of surprises, fun mechanics, and endless entertainment.</p>
+            <p>Get ready to have a fun-filled time with Aksh Bhatt’s Scratch-made masterpieces!</p>
+        </div>
+
+        <div class="row">
+            <div class="col-md-3" style="background-image: url('Containment.jpg');  background-size: cover; background-position: center;">
+                <div class="course-tile" onclick="window.open('https://scratch.mit.edu/projects/1137478005', '_blank')">
+                  
+                    <div class="course-title">Containment</div>
+                    <div class="course-description">My Best Animations!</div>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="course-tile" onclick="window.open('https://scratch.mit.edu/projects/1134853598', '_blank')" style="background-image: url('ButtonSmash.jpg');  background-size: cover; background-position: center;">
+                  
+                    <div class="course-title">Button Smash</div>
+                   
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="course-tile" onclick="location.href='#javascript'" style="pointer-events: none; opacity: 0.5; cursor: not-allowed;">
+                 
+                    <div class="course-title">More Games...coming soon</div>
+           
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="course-tile" onclick="location.href='#database'" style="pointer-events: none; opacity: 0.5; cursor: not-allowed;">
+                    
+                    <div class="course-title">More Games...coming soon</div>
+                    
+                </div>
+            </div>
+        </div>
+
+        <br><br>
+
+        <div id="about-section" class="description-container">
+            <h2>Who We Are</h2>
+            <p>
+                Hi! I’m Aksh Bhatt, a 10-year-old who’s passionate about making games! I started learning Scratch game coding just a year ago, and in that short time, I’ve created some super fun and creative games. I love bringing my ideas to life, and I’m always looking for new ways to challenge myself and have fun while coding!
+            </p>
+
+            <p>
+                In the future, I want to be a game developer and create even bigger and cooler games that everyone can enjoy. But for now, I’m having a blast with my Scratch creations and sharing them with you. Thanks for checking them out, and I hope you have as much fun playing them as I had making them! 🎮💻
+            </p>
+
+            <p>
+                Feel free to let me know what you think of my games or share any fun ideas you have! 😊
+            </p>
+
+            <p>Have questions or feedback? We'd love to hear from you! Email us at <a href="mailto:youngcodingacademy@gmail.com" style="color: #FFD700;">youngcodingacademy@gmail.com</a></p>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js"></script>
+</body>
+</html>
